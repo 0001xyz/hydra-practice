@@ -1,0 +1,11 @@
+osc(100,0.09).out(o0)
+osc(40,-0.1,0).out(o1)
+osc(15,0.3).rotate(45).out(o2)
+//osc(100,-0.09).out(o3)
+
+s0.initCam()
+src(s0).kaleid([3,10,5,20].fast(1))
+.rotate(4)
+.color(3,5,10)
+  
+  .out(o3)
