@@ -1,0 +1,14 @@
+//s0.initScreen() // initialize a webcam in source buffer s0
+src(s0)
+ .scrollX(()=>Math.sin(time/1.5)).repeat(()=>Math.sin(time/1003 ))
+.add(osc(100,1))//.scale(()=>Math.sin(time/3 ))
+  .scale(5)
+
+.mult(osc(1000,.12))
+.saturate(.01)
+.modulate(osc(.100,1)).diff(o0)
+
+  
+  
+  
+  .out()
